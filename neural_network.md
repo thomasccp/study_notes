@@ -38,3 +38,6 @@ GoogleNet
 ResNet
 - ILSVRC 2015 (top-5 error: 3.57%)
 - 152/101/50/34/18 layers
+- Simply stacking layers cause higher training and testing error
+- Learned shallow model -> add extra layers as "identity"
+- H(x) = F(x) + x, H(x) is the desired mapping, train the weight layer to fit F(x)
