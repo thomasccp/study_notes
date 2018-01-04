@@ -37,4 +37,4 @@ GoogleNet
 
 ResNet
 - ILSVRC 2015 (top-5 error: 3.57%)
-- 152 layers
+- 152/101/50/34/18 layers
