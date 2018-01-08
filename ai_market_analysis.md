@@ -14,6 +14,7 @@
 - Photo editing, AR, voice assistance
 - Android NN -> TensorFlow/TensorFlow Lite
 - AR: 3D sensor (depth info) + camera (2D image) -> identify 3D objects -> 3D modelling -> combine images
+- Market size: 3B ICs, 30B sales (exclusing Apple)
 
 2. Surveillance
 - Sensor/MIPI -> ISP -> encoder -> network storage
@@ -21,6 +22,7 @@
 - Ambarella, TI, HiSilicon
 - NB-IOT: <500mW power when activted by sensor, <10mW at idle
 - GPU 200mm^2 cost $40
+- Market size: 100M ICs, 2B sales
 
 3. Home
 - Set-top box, digital TV, smart speaker
@@ -28,5 +30,13 @@
 - Natural language processing and neural network calculation are done on the cloud
 
 4. Automotive
+- ADAS
+- Functional safety (ASIL A-D)
+- Market size: 30B sales
+
 5. Robot
+
 6. Drone
+- Safety (ECC/BIST/lock step) and redundancy
+
+Source: https://mp.weixin.qq.com/s/6ksL9p1Gmnrd2HahU3KniQ
