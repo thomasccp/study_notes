@@ -41,3 +41,18 @@ ResNet
 - Simply stacking layers cause higher training and testing error
 - Learned shallow model -> add extra layers as "identity"
 - H(x) = F(x) + x, H(x) is the desired mapping, train the weight layer to fit F(x)
+
+SqueezeNet
+- Designed to improve efficiency (storage and speed)
+- Not model compression
+- Focus on more efficient conv, reduce network hyperparameters while maintaining accuracy
+- Reference: SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB (https://arxiv.org/abs/1602.07360)
+- **Fire module**: squeezenet (1x1 conv) + expand (concat a 1x1 conv and a 3x3 conv)
+- Input: HxWxM
+- Squeeze: kernel 1x1, S1 (<M) feature maps -> HxWxS1
+- Expand a: kernel 1x1, Ea feature maps -> HxWxEa
+- Expand b: kernel 3x3, Eb feature maps -> HxWxEb
+- Concat: HxWx(Ea+Eb)
+- Ea = Eb = 4xS1 < M
+- 50x reduction in model size vs. AlexNet (4.8MB vs 240M)
+- Deep compression achieves further reduction (0.66MB 8 bit, 0.47MB 6 bit)
