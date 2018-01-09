@@ -1,4 +1,4 @@
-#Deep learning accelerator
+# Deep learning accelerator
 
 1. Hardware
 - Intel Arria 10 1150 FPGA
