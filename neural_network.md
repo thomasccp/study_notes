@@ -53,7 +53,7 @@ SqueezeNet
 - Expand a: kernel 1x1, Ea feature maps -> HxWxEa
 - Expand b: kernel 3x3, Eb feature maps -> HxWxEb
 - Concat: HxWx(Ea+Eb)
-- Ea = Eb = 4xS1 < M
+- Ea = Eb = S1/4 < M
 - 50x reduction in model size vs. AlexNet (4.8MB vs 240M)
 - Deep compression achieves further reduction (0.66MB 8 bit, 0.47MB 6 bit)
 - conv1 96, maxpool/2, fire2 128, fire3 128, fire4 256, maxpool/2, fire5 256, fire6 384, fire7 384, fire8 512, maxpool/2, fire9 512, conv10 1000, global avgpool, softmax
